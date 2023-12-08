@@ -2,6 +2,7 @@ import ArrowFunctions from './arrow-functions'
 import BasicSyntax from './basic-syntax'
 import Des from './object-destructuring'
 import PVShort from './prop-value-shorthand'
+import JanMath from './math'
 
 const userObject = {
   name: "Jay",
@@ -19,20 +20,25 @@ const syntax = new ArrowFunctions()
 // syntax.makeObjects()
 
 
-const des = new Des()
-des.destructureTheObject()
-des.renameDesVars()
-des.printNames(userObject)
-des.printNamesRename(userObject)
-des.printNamesDefault(userObject)
+// const des = new Des()
+// des.destructureTheObject()
+// des.renameDesVars()
+// des.printNames(userObject)
+// des.printNamesRename(userObject)
+// des.printNamesDefault(userObject)
 
 const pvShort = new PVShort()
-pvShort.propertyValueShorthand()
+// pvShort.propertyValueShorthand()
 
 const basic = new BasicSyntax()
-console.log(basic.myPublicVar)
+// console.log(basic.myPublicVar)
 // basic.myProtectedVar // err
-console.log(basic.myConst)
-console.log(basic.myArray)
-console.log(basic.person)
-console.log(basic.add(1, 2))
+// console.log(basic.myConst)
+// console.log(basic.myArray)
+// console.log(basic.person)
+// console.log(basic.add(1, 2))
+// basic.arrayOps()
+
+
+const math = new JanMath()
+math.randomArray();

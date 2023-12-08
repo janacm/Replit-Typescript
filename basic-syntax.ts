@@ -20,7 +20,25 @@ export class BasicSyntax {
   // Arrays
   myArray: number[] = [1, 2, 3, 4, 5]
   arrayOps() {
-    this.myArray.forEach((num: number) => console.log(num))
+    // For each
+    this.myArray.forEach((num: number) => console.log(`num: ${num}`))
+
+
+    const evens = this.myArray.filter(num => num % 2 === 0)
+    console.log(evens)
+
+    console.log('array maps!')
+    const doubled = this.myArray.map(num => num * 2)
+    doubled.forEach((num: number) => console.log(`num x2: ${num}`))
+
+    // If your callback is not shorthand (uses braces) then you need to write return
+    const tripled = this.myArray.map(num => {
+      return num * 3
+    })
+
+    tripled.forEach((num: number) => console.log(`num x3: ${num}`))
+
+
   }
 
 

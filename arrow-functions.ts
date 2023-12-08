@@ -24,7 +24,7 @@ export class ArrowFunctions {
   );
 
   // If an arrow function only has one arg, parens are optional
-  arrowFuncOneArg = string => console.log(string);
+  arrowFuncOneArg = (string: string) => console.log(string);
 
   // Arrow functions are most useful for anonymous functions
   anonFuncRegular() {
@@ -44,12 +44,12 @@ export class ArrowFunctions {
     console.log(arrJoined);
   }
 
-  makeObjects(){
+  makeObjects() {
     // Need to have parens around object creation for arrow funcs, so JS knows it's not a long form arrow func
-  const makeObject = () => ({name: 'jaybu'})
+    const makeObject = () => ({ name: 'jaybu' })
     console.log(makeObject().name)
   }
-  
+
 }
 
 export default ArrowFunctions;

@@ -4,9 +4,11 @@ import Des from './object-destructuring'
 import PVShort from './prop-value-shorthand'
 import JanMath from './math'
 import {
+    createRandomMatrix,
     longestCommonSubsequence,
     printMatrix,
 } from './longest-common-subsequence'
+import { printMatrixDiagonal } from './printMatrixDiagonals'
 
 const userObject = {
     name: 'Jay',
@@ -46,4 +48,10 @@ const userObject = {
 // const math = new JanMath()
 // math.randomArray()
 
-longestCommonSubsequence('Hello', 'World')
+// longestCommonSubsequence('Hello', 'World')
+
+// printMatrixDiagonal - Meta interview question
+let matrix = createRandomMatrix()
+printMatrix(matrix)
+console.log(`Print diagonal matrix`)
+printMatrixDiagonal(matrix, matrix.length, matrix[0].length)

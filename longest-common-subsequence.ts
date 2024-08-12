@@ -44,7 +44,7 @@ export function longestCommonSubsequence(text1: string, text2: string): number {
     printMatrix(dp)
     return result
 }
-function createRandomMatrix() {
+export function createRandomMatrix(): number[][] {
     let matrix: number[][] = []
     for (let i = 0; i < 3; i++) {
         matrix[i] = []
